@@ -1,0 +1,30 @@
+{
+  "name": "jeol-smart-stock-control",
+  "version": "1.0.0",
+  "description": "Sistem Informasi Manajemen Kontrol Produksi & Closed-Loop Stok Jeol Food",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/local-server.js",
+    "dev": "node src/local-server.js",
+    "dev:cf": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": [
+    "jeol-food",
+    "stock-control",
+    "inventory",
+    "production-yield",
+    "cloudflare-workers",
+    "hono"
+  ],
+  "author": "Catalyst Team - Capstone Project",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "hono": "^4.13.17"
+  },
+  "devDependencies": {
+    "wrangler": "^4.160.0"
+  }
+}
